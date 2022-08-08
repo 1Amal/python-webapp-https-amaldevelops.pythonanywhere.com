@@ -6,15 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-    <title>Weather App</title>
+    <title>Current Weather</title>
     </head>
 <body>
+<div id="introduction">
 
-    <h1 id="heading">Weather App for Australia</h1>
+    <h1>Weather App using <img src="/static/logo_white_cropped.png" alt="OpenWeather" width="107px" height="46px"> API</h1> 
+    </div>
 
 <div id="current_weather">
     <h1>{{weather}}</h1>    
 </div>
+
+
+
+<div id="usage">
+<h2> Usage </h2>
+
+<p>Code for this web app is written in;</p>
+<ul>
+    <li><a href="https://www.python.org/" target="_blank">Python</a></li>
+    <li><a href="https://palletsprojects.com/p/flask/" target="_blank">Flask</a></li>
+    <li><a href="https://palletsprojects.com/p/jinja/" target="_blank">Jinja</a> </li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
+    <li><a href="https://openweathermap.org/api" target="_blank">API to receive data is via OpenWeatherMap</a></li>
+</ul>
+ 
+</div>
+
+    <!-- <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>  -->
+
+<!-- <form action="">
+<label for="form_name">Location</label>
+<input type="text" id="form_name" name="form_name" value="melbourne,au">
+<input type="submit" value="submit">
+
+</form>> -->
+
+</div>
+
 
 </body>
 </html>
