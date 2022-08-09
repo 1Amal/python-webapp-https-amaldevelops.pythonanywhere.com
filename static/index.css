@@ -3,12 +3,77 @@ This is the main CSS file
 */
 *{
 background-color: #2b2a33;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav_bar {
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+#nav_bar_list ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  padding: 20px 20px 20px 20px;
+ 
+}
+
+
+#nav_bar_list li{
+  float: left;
+  list-style-type: none;
+ 
+}
+
+#nav_bar_list a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+#nav_bar_list li a:hover:not(.active) {
+  background-color: #04AA6D;
+}
+
+#nav_bar_list .active {
+  background-color: #405b51;
+}
+
+a{
+  color:rgb(106, 130, 228);
+}
+
+#heading {
+  text-align: center;
+  color: red;
+}
+
+
+#current_weather
+{
+color:#9dd3da;
+background-color:#2577c3;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: 200;
+padding: 20px 20px 20px 20px;
 }
 
 #introduction {
 background-color:#48484a;
 color:#dcdcdd;
 text-align: center;
+padding: 20px 20px 20px 20px;
 }
 
 #usage{
@@ -17,19 +82,24 @@ text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 200;
+  padding: 20px 20px 20px 20px;
 }
 
-#heading {
-    text-align: center;
-    color: red;
-  }
+#tech_stack{
+  color:#dcdcdd;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 20px 20px 20px 20px;
+}
 
-#current_weather
-{
-color:#dcdcdd;
-background-color:white;
-text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 20px;
-font-weight: 200;
+
+#footer{
+  color:#dcdcdd;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 20px 20px 20px 20px;
 }
