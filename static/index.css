@@ -12,6 +12,8 @@ font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-size: 30px;
   font-weight: 200;
+  color: #04AA6D;
+  
 }
 
 #nav_bar_list ul{
@@ -60,13 +62,19 @@ a{
 
 #current_weather
 {
-color:#9dd3da;
-background-color:#2577c3;
+color:#e66b31;
 text-align: center;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 20px;
 font-weight: 200;
-padding: 20px 20px 20px 20px;
+padding-top: 300px;
+padding-right: 10px;
+padding-bottom: 250px;
+padding-left: 10px;
+background-image: url('/static/weather.jpg');
+background-repeat: no-repeat;
+background-attachment:fixed ;
+background-size: cover;
 }
 
 #introduction {

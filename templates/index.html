@@ -16,29 +16,21 @@
         <li><a href="https://amaldevelops.pythonanywhere.com/">Home page</a></li>
 
     </ul>
-
+    <h1>Weather App using  <img src="/static/logo_white_cropped.png" alt="OpenWeather" width="107px" height="46px"> API</h1>
         </div>
 
-
-<!-- <div id="introduction">
-
-    <h1>Weather App using  <img src="/static/logo_white_cropped.png" alt="OpenWeather" width="107px" height="46px"> API</h1> 
-    </div> -->
-
 <div id="current_weather">
-    <h1>Weather App using  <img src="/static/logo_white_cropped.png" alt="OpenWeather" width="107px" height="46px"> API</h1>
-    <h2>{{weather}}</h2>    
-</div>
+    
+    <h2>Current weather in {{weather}}</h2>    
+        </div>
 
 <div id="usage">
     <h1>Usage</h1>
     <ol>
         <li>Default weather location is set as Melbourne, Australia</li>
         <li>To get any location enter ["/city_name,two digit country code"] infront of the base URL. I.e. for London, UK enter <a href="https://amaldevelops.pythonanywhere.com/london,uk">https://amaldevelops.pythonanywhere.com/london,uk</a> </li>
-    
     </ol>
-    
-    </div>
+        </div>
 
 <div id="tech_stack">
 <h2> Technology stack and how this app work ! </h2>
@@ -59,21 +51,21 @@
         object-oriented and functional programming. 
         It is often described as a "batteries included" language due to its comprehensive standard library</li>
     <li><a href="https://palletsprojects.com/p/flask/" target="_blank">Flask</a>: Flask is a lightweight <a href="https://wsgi.readthedocs.io/en/latest/what.html" target="_blank">WSGI</a> web application framework</li>
-    <li><a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a>: API to receive weather data is via OpenWeatherMap </li>
+    <li><a href="https://openweathermap.org/current" target="_blank">OpenWeatherMap</a>: API to receive weather data is via OpenWeatherMap </li>
     <li><a href="https://www.pythonanywhere.com/" target="_blank">Python Anywhere</a>: Webapp is hosted in Python anywhere which allows you to host, run, and code Python in the cloud, which is pretty cool!</li>
 </ul>
  
 <h3>How this app work ?</h3>
 <ol>
-    <li>When a wser enters a the web app URL i.e. <a href="https://amaldevelops.pythonanywhere.com/">https://amaldevelops.pythonanywhere.com</a> it will call the main route in the Python code</li>
-    <l1>Main route in the Python/flask code will call up the main function and will pass the location as a variable to the function, which contains code to call the OpenWeathermap API</l1>
+    <li>When a user enters the web app URL i.e. <a href="https://amaldevelops.pythonanywhere.com/">https://amaldevelops.pythonanywhere.com</a> it will call the main route in the Python code</li>
+    <l1>Default behaviour of the Main route in the Python/flask code is programmed so it will give "Melbourne,Australia" weather information by calling up the main function and will pass the location as a variable to the function, which contains code to call the OpenWeathermap API</l1>
     <li>Using the following format we can call the API:[https://api.openweathermap.org/data/2.5/weather?q={location_input}&appid={API_key}&units=metric]</li>
-    <li>{location_input} is passed from the user entered location and {API_key} which was given by openweathermap and [&units=metric] is used to specify the unit of result we need </li>
-    <li>openweathermap will send a response in <a href="https://www.json.org/json-en.html" target="_blank">JSON format</a></li>
+    <li>{location_input} is passed from the user entered location along with {API_key} supplied by openweathermap.[&units=metric] is used to specify the unit of result we need </li>
+    <li>Openweathermap will send a response in <a href="https://www.json.org/json-en.html" target="_blank">JSON format</a></li>
     <li>Python Function will convert JSON format to a Python Dictionary and we can then manipulate the data as we wish </li>
     <li>Using Python dictionary methods we can extract the information we require and this is stored in a Python variable</li>
-    <li>Stored Python variable is passed into a HTML template with CSS and Jinja syntax all of which will be interpreted by Flask</li>
-    <li>Flask will interpret the HTML,CSS,Jinja,Python code and will create a new HTML document which will be pushed back to the users browser </li>
+    <li>Above Python variable is passed to Flask and it is parsed by Flask along with HTML/Jinja template and CSS.</li>
+    <li>Flask will interpret the HTML,CSS,Jinja,Python code and will create a new HTML document which will be pushed back to the users browser as can be seen on this webpage </li>
 </ol>
 </div>
 
@@ -95,7 +87,7 @@
 </div>
 
 <div id="footer">
-<p><a href="https://1amal.github.io/">Amal Kariyawasam, 2022</a></p>
+<p><a href="https://1amal.github.io/">Amal Kariyawasam, 09/08/2022</a></p>
 
 </div>
 
