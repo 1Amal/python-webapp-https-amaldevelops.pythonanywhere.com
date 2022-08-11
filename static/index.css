@@ -1,20 +1,24 @@
-/*Amal Kariyawasam, 2022,
+/*Amal Kariyawasam, 11/08/2022,
 This is the main CSS file 
 */
+/* Main background */
 *{
 background-color: #2b2a33;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Nav Bar */
 #nav_bar {
   text-align: center;
-  padding: 20px 20px 20px 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 1px;
+  padding-left: 20px;
   text-decoration: none;
   font-size: 30px;
   font-weight: 200;
   color: #04AA6D;
-  
-}
+ }
 
 #nav_bar_list ul{
   list-style-type: none;
@@ -23,14 +27,12 @@ font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
   background-color: #333;
   padding: 20px 20px 20px 20px;
- 
 }
 
 
 #nav_bar_list li{
   float: left;
   list-style-type: none;
- 
 }
 
 #nav_bar_list a{
@@ -39,7 +41,6 @@ font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
- 
 }
 
 #nav_bar_list li a:hover:not(.active) {
@@ -54,20 +55,15 @@ a{
   color:rgb(106, 130, 228);
 }
 
-#heading {
-  text-align: center;
-  color: red;
-}
-
-
-#current_weather
+/* Weather Div */
+.current_weather
 {
-color:#e66b31;
+color:#dcdcdd;
 text-align: center;
 font-family: Arial, Helvetica, sans-serif;
-font-size: 20px;
+font-size: 2.5vh;
 font-weight: 200;
-padding-top: 300px;
+padding-top: 200px;
 padding-right: 10px;
 padding-bottom: 250px;
 padding-left: 10px;
@@ -88,8 +84,8 @@ padding: 20px 20px 20px 20px;
   color:#dcdcdd;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 2.5vh;
+  font-weight: 100;
   padding: 20px 20px 20px 20px;
 }
 
@@ -97,12 +93,12 @@ padding: 20px 20px 20px 20px;
   color:#dcdcdd;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 2.5vh;
   font-weight: 200;
   padding: 20px 20px 20px 20px;
 }
 
-
+/* Footer styling */
 #footer{
   color:#dcdcdd;
   text-align: center;
