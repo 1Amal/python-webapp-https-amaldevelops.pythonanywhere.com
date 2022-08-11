@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Amal Kariyawasam, Weather App -->
+<!-- Amal Kariyawasam,11/08/2022, Weather App -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-    <title>Current Weather</title>
+    <title>User friendly weatherapp using OpenWeather API, Python/Flask, HTML and CSS</title>
     </head>
 <body>
 
@@ -21,14 +21,14 @@
 
 <div id="current_weather">
     
-    <h2>Current weather in {{weather}}</h2>    
+    <h2>{{weather}}</h2>    
         </div>
 
 <div id="usage">
     <h1>Usage</h1>
     <ol>
         <li>Default weather location is set as Melbourne, Australia</li>
-        <li>To get any location enter ["/city_name,two digit country code"] infront of the base URL. I.e. for London, UK enter <a href="https://amaldevelops.pythonanywhere.com/london,uk">https://amaldevelops.pythonanywhere.com/london,uk</a> </li>
+        <li>To get any location enter ["/city_name,two digit country code"] infront of the base URL. I.e. for Colombo, LK enter <a href="https://amaldevelops.pythonanywhere.com/colombo,lk">https://amaldevelops.pythonanywhere.com/colombo,lk</a> </li>
     </ol>
         </div>
 
